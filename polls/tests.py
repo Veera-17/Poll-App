@@ -43,7 +43,7 @@ class QuestionModelTests(TestCase):
             number_of_choice = question.choice_set.all().count()
             self.assertGreaterEqual(
                 number_of_choice, 
-                1, 
+                2, 
                 f"Question '{question.question_text}' does not have at least one choice."
             )
 
